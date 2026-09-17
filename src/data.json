@@ -1,0 +1,19 @@
+{
+    "categories": [
+        {"name": "전체", "id": 0},
+        {"name": "식사", "id": 1},
+        {"name": "디저트", "id": 2},
+        {"name": "음료", "id": 3}
+    ],
+    "items": [
+        {"id": 1, "name": "양선지해장국", "price": 10000, "category": 1},
+        {"id": 2, "name": "치즈피자", "price": 15000, "category": 1},
+        {"id": 3, "name": "부대찌개", "price": 11000, "category": 1},
+        {"id": 4, "name": "비요뜨", "price": 2000, "category": 2},
+        {"id": 5, "name": "배스킨라빈스 하프갤런", "price": 31500, "category": 2},
+        {"id": 6, "name": "낙성대버터떡", "price": 4000, "category": 2},
+        {"id": 7, "name": "코카콜라 제로", "price": 2500, "category": 3},
+        {"id": 8, "name": "망고 요거트", "price": 4500, "category": 3},
+        {"id": 9, "name": "말차라떼", "price": 5000, "category": 3}
+    ]
+}
