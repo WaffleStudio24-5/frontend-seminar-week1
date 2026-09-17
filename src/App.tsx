@@ -92,8 +92,7 @@ function MenuItemCard({ item, setCart }: { item: Item, setCart: Function}) {
   return (
     <article onClick={() => addToCart()}>
       <h2>{item.name}</h2>
-      <img src={"../assets/item-" + item.id + ".png"} 
-      alt={item.name + "의 사진"}></img>
+      <img src={`/assets/item-${item.id}.png`} alt={`${item.name}의 사진`} />
       <p>{formatPrice(item.price)}</p>
     </article>
   );
