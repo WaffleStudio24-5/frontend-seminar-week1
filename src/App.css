@@ -1,15 +1,141 @@
-#root {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2rem;
+:root {
+  --page-max-width: 1920px;
+  --page-margin: 0 auto;
+  --page-padding: 2rem;
+}
+
+#root { 
+  max-width: var(--page-max-width);
+  margin: var(--page-margin);
+  padding: var(--page-padding);
+  height: 100vh;
 }
 
 main {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
+  align-content: start;
+  height: 100%;
 }
 
 h1,
 p {
   margin: 0;
+}
+
+#content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:5%;
+  flex: 1;
+}
+
+.menuItems{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: calc((100% - 32%*3)/2);
+  width: 70%;
+}
+
+.menuButton{
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  width: 32%;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuImg{
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.menuTitle{
+  text-align: left;
+  font-weight: bold;
+  font-size: larger;
+  height: 2.4em;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.menuPrice{
+  text-align: left;
+  height: 1.2em;
+  flex-shrink: 0;
+}
+
+.shoppingCart{
+  background-color: rgb(200, 200, 200);
+  width: 25%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartItems{
+  
+}
+
+
+.cartHorizontalTexts{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartItem{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.cartCalcItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cartItemName{
+  font-weight: bolder;
+  width: 70%;
+}
+
+.cartCntAdjust{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartItemQuantity{
+  width: 15%;
+}
+
+.cartItemPrice{
+  width: 15%;
+}
+#cartBottom{
+  margin-top: auto;
+}
+
+#cartOrderButton{
+  align-self: center;
+  width: 100%;
+  font-weight: bold;
+  height: 2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
